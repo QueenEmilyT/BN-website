@@ -1,0 +1,166 @@
+/* Original styles (unchanged) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #FDFBD4; /* subtle background color */
+}
+
+/* Navigation bar */
+nav {
+  background: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero section (header) with background image */
+header {
+  background: url('https://i.pinimg.com/736x/86/26/6e/86266e2ebf49ff79de089983b39c665e.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 4em;
+  margin-bottom: 0.3em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+header button {
+  background: #ff9900;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header button:hover {
+  background: #e67e00;
+}
+
+/* About section with background image */
+#about {
+  background: url('https://source.unsplash.com/1600x900/?hotel-lobby') no-repeat center center/cover;
+  color: #000;
+  padding: 50px 20px;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Services and Rooms section container */
+.rooms, .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card styling */
+.card {
+  position: relative;
+  flex: 1 1 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 100%);
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+
+/* Rooms section with image background */
+#rooms {
+  background: url('https://source.unsplash.com/1600x900/?hotel-room') no-repeat center center/cover;
+  color: rgb(0, 0, 0);
+  padding: 50px 20px;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Contact section stays simple and light */
+#contact {
+  background: #fdfdfd;
+  color: #333;
+  text-align: center;
+}
+
+/* Form */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Submit Button */
+button {
+  background: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #4cae4c;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

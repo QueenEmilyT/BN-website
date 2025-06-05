@@ -3,158 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Grand Horizon Hotel</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      background: url('https://source.unsplash.com/1600x900/?hotel,resort') no-repeat center center/cover;
-      color: white;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 4em;
-      margin-bottom: 0.3em;
-    }
-
-    header p {
-      font-size: 1.5em;
-      margin-bottom: 1em;
-    }
-
-    nav {
-      background: #333;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .rooms, .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .card {
-      flex: 1 1 300px;
-      background: #f4f4f4;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    form {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    button {
-      background: #5cb85c;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      font-size: 1em;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #4cae4c;
-    }
-  </style>
+  <title>BN Private Beach</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
+    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#rooms">Rooms</a>
+    <a href="#rooms">Cottages</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header>
-    <h1>Grand Horizon Hotel</h1>
-    <p>Your luxury escape awaits</p>
+    <h1>BN Private Beach</h1>
+    <p>Your perfect beachside escape</p>
     <a href="#contact"><button>Book Now</button></a>
   </header>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Grand Horizon Hotel offers world-class accommodation with stunning views and exceptional service, right at the heart of the city.</p>
+    <p>BN Private Beach offers a serene tropical escape with white sandy shores, crystal-clear waters, and unforgettable ocean experiences.</p>
   </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
+<!-- Services Section -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card" style="background-image: url('https://i.pinimg.com/736x/7a/84/07/7a8407ff7e646073ca8a8c07038865d3.jpg');">
+      <div class="card-content">
         <h3>24/7 Room Service</h3>
         <p>Enjoy meals and refreshments anytime, delivered directly to your room.</p>
       </div>
-      <div class="card">
+    </div>
+    <div class="card" style="background-image: url('https://i.pinimg.com/736x/f8/d0/0e/f8d00e2028bdb46a14f4d4aeb7d65fb2.jpg');">
+      <div class="card-content">
         <h3>Spa & Wellness</h3>
         <p>Relax and rejuvenate with our professional massage and spa treatments.</p>
       </div>
-      <div class="card">
+    </div>
+    <div class="card" style="background-image: url('https://i.pinimg.com/736x/83/cf/c6/83cfc66176d6c87c6f134953c7bf068c.jpg');">
+      <div class="card-content">
         <h3>Free Wi-Fi</h3>
         <p>Stay connected with high-speed internet in all rooms and public areas.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="rooms">
-    <h2>Our Rooms</h2>
-    <div class="rooms">
-      <div class="card">
+<!-- Rooms Section -->
+<section id="rooms">
+  <h2>Our Rooms</h2>
+  <div class="rooms">
+    <div class="card" style="background-image: url('https://i.pinimg.com/736x/1e/33/58/1e335895fb38c497ef5a3ed24e7cd3cf.jpg');">
+      <div class="card-content">
         <h3>Deluxe Room</h3>
         <p>Spacious rooms with modern amenities and city view.</p>
       </div>
-      <div class="card">
+    </div>
+    <div class="card" style="background-image: url('https://i.pinimg.com/736x/ca/63/bd/ca63bd3a7ff2d9ebec87279c00a14511.jpg');">
+      <div class="card-content">
         <h3>Executive Suite</h3>
         <p>Elegant suite with separate living area and luxury bath.</p>
       </div>
-      <div class="card">
+    </div>
+    <div class="card" style="background-image: url('https://i.pinimg.com/736x/f3/92/62/f392621936d319979c69e02c84333451.jpg');">
+      <div class="card-content">
         <h3>Presidential Suite</h3>
         <p>Top-class comfort, panoramic view, and exclusive services.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact & Booking</h2>
@@ -167,7 +88,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Grand Horizon Hotel | Designed by Mr. Monad</p>
+    <p>© 2025 BN Private Beach | Designed by Mr. Monad</p>
   </footer>
 
 </body>
